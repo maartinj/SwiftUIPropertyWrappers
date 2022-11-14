@@ -1,0 +1,24 @@
+SwiftUI Property Wrappers Version 2:
+https://www.youtube.com/watch?v=u3RIfxSk1As&ab_channel=StewartLynch
+
+
+References: 
+Donny Wals:
+https://swiftuipropertywrappers.com/
+
+Majid:
+https://swiftwithmajid.com/2020/07/02/the-difference-between-stateobject-environmentobject-and-observedobject-in-swiftui/
+
+John Sundell:
+https://swiftbysundell.com/articles/swiftui-state-management-guide/
+
+
+Previous links from first video
+Majid: 
+https://swiftwithmajid.com/2019/06/12/understanding-property-wrappers-in-swiftui/
+
+Sarun: 
+https://sarunw.com/posts/data-in-swiftui-3/
+
+Paul Hudson:
+https://www.hackingwithswift.com/quick-start/swiftui/understanding-property-wrappers-in-swift-and-swiftui
