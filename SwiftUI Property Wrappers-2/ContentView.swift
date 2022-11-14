@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var number = 0
+    @State private var number = 0
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -21,7 +21,7 @@ struct ContentView: View {
                 }
                 Group {
                     Button("New Number") {
-                        
+                        number = Int.random(in: 1...10)
                     }
                     Button("Show Modal") {
                         
