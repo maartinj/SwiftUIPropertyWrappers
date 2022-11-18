@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct ModalSheetView: View {
-    var number: Int = 11
+    @EnvironmentObject var user: User
+    @Binding var isShowing: Bool
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
                 HStack {
                     Text("Lucky Number:")
-                    Text("\(number)")
+                    Text("\(user.luckyNumber)")
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.red)
                 }
                 Button("New Number") {
-                    
+                    user.luckyNumber = Int.random(in: 11...20)
                 }
                 .frame(width: 150)
                 .foregroundColor(.white)
@@ -28,12 +29,12 @@ struct ModalSheetView: View {
                 .background(Color.purple)
                 .cornerRadius(7)
             }
-            .navigationTitle("Modal Sheet View")
+            .navigationTitle("\(user.name)")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button("Dismiss") {
-                        
+                        isShowing = false
                     }
                 }
             }
@@ -43,6 +44,6 @@ struct ModalSheetView: View {
 
 struct ModalSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalSheetView()
+        ModalSheetView(isShowing: .constant(true)).environmentObject(User(name: "Stewart", luckyNumber: 15))
     }
 }

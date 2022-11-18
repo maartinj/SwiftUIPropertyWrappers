@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var number = 0
+    @EnvironmentObject  var user: User
+    @State private var presentModal = false
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
                 HStack {
                     Text("Lucky Number:")
-                    Text("\(number)")
+                    Text("\(user.luckyNumber)")
                         .foregroundColor(.white)
                         .padding()
                         .background(Color.green)
                 }
                 Group {
                     Button("New Number") {
-                        number = Int.random(in: 1...10)
+                        user.luckyNumber = Int.random(in: 1...10)
                     }
                     Button("Show Modal") {
-                        
+                        presentModal = true
+                    }
+                    .sheet(isPresented: $presentModal) {
+                        ModalSheetView(isShowing: $presentModal).environmentObject(user)
                     }
                 }
                 .frame(width: 150)
@@ -36,7 +40,9 @@ struct ContentView: View {
             .navigationTitle("Property Wrappers 2")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Text("Go Next")
+                    NavigationLink(destination: NavDestinationView()) {
+                        Text("Go Next")
+                    }
                 }
             }
         }
@@ -46,5 +52,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(User(name: "Stewart", luckyNumber: 3))
     }
 }

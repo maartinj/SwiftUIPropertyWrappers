@@ -13,6 +13,7 @@
 		BB833AB224CC8D7400B85CD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB833AB124CC8D7400B85CD6 /* Preview Assets.xcassets */; };
 		BB833ABA24CC8FA600B85CD6 /* ModalSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB833AB924CC8FA600B85CD6 /* ModalSheetView.swift */; };
 		BB833ABC24CC919100B85CD6 /* NavDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB833ABB24CC919100B85CD6 /* NavDestinationView.swift */; };
+		E410C9D52927196B001C118A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410C9D42927196B001C118A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB833AB324CC8D7400B85CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB833AB924CC8FA600B85CD6 /* ModalSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheetView.swift; sourceTree = "<group>"; };
 		BB833ABB24CC919100B85CD6 /* NavDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDestinationView.swift; sourceTree = "<group>"; };
+		E410C9D42927196B001C118A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BB833AAC24CC8D7300B85CD6 /* ContentView.swift */,
 				BB833AB924CC8FA600B85CD6 /* ModalSheetView.swift */,
 				BB833ABB24CC919100B85CD6 /* NavDestinationView.swift */,
+				E410C9D42927196B001C118A /* User.swift */,
 				BB833AAE24CC8D7400B85CD6 /* Assets.xcassets */,
 				BB833AB324CC8D7400B85CD6 /* Info.plist */,
 				BB833AB024CC8D7400B85CD6 /* Preview Content */,
@@ -147,6 +150,7 @@
 				BB833ABA24CC8FA600B85CD6 /* ModalSheetView.swift in Sources */,
 				BB833ABC24CC919100B85CD6 /* NavDestinationView.swift in Sources */,
 				BB833AAD24CC8D7300B85CD6 /* ContentView.swift in Sources */,
+				E410C9D52927196B001C118A /* User.swift in Sources */,
 				BB833AAB24CC8D7300B85CD6 /* SwiftUI_Property_Wrappers_2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
